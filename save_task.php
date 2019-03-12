@@ -9,6 +9,10 @@
 	if (!$result) {
 		die('Query Failed!');
 	} else {
-		header('location: index.php')
+		$_SESSION['message'] = 'Task Saved Successfully!';
+		$_SESSION['message_type'] = 'success';
+		header('location: index.php');
 	}
+
+
 ?>
